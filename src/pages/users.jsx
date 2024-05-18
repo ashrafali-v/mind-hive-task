@@ -1,6 +1,8 @@
+import UsersList from '../components/userslist'
+
 function Users() {
   return (
-   <p>Users</p>
+    <UsersList />
   );
 }
 

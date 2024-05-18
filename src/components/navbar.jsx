@@ -10,6 +10,9 @@ function Navbar() {
                 </div>
                 <nav className='flex flex-row lg:space-x-20 md:space-x-10 sm:space-x-5 basis-1/4'>
                     <ul className="nav-links  flex flex-row gap-4">
+                        <Link to="/">
+                            <li>Home</li>
+                        </Link>
                         <Link to="/users">
                             <li>Users</li>
                         </Link>

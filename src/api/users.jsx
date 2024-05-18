@@ -1,14 +1,8 @@
 import axios from "axios";
 
-export function getPosts(){
+export function getUsers(){
   return axios
-    .get("https://jsonplaceholder.typicode.com/posts")
-    .then(res => res.data)
-}
-
-export function getPost(id){
-  return axios
-    .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+    .get("https://jsonplaceholder.typicode.com/users")
     .then(res => res.data)
 }
 
@@ -31,10 +25,4 @@ export function getPostsPaginated(page) {
         posts: res.data,
       }
     })
-}
-
-export function getComments(id){
-   return axios
-    .get(`https://jsonplaceholder.typicode.com/comments?postId=${id}`)
-    .then(res => res.data)
 }
